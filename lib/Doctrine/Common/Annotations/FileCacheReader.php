@@ -211,7 +211,7 @@ class FileCacheReader implements Reader
         }
 
         @chmod($path, 0666 & ~umask());
-        @unlink($tempfile);
+        //@unlink($tempfile);
     }
 
     /**
